@@ -1,0 +1,421 @@
+{
+  "settings": {
+    "name": "HSB Göteborg Fastighetsförvaltning",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
+      "styling": {
+        "primaryColor": "#003366",
+        "secondaryColor": "#006699",
+        "successColor": "#be880b",
+        "infoColor": "#0099cc",
+        "warningColor": "#5f7d8b",
+        "dangerColor": "#ffdc00",
+        "mainFont": "Inter",
+        "display1Font": "Cabin",
+        "display1Size": 4,
+        "display2Font": "Cabin Condensed",
+        "display2Size": 3.25,
+        "display5Font": "Cabin",
+        "display5Size": 1.8,
+        "display7Font": "Lato",
+        "display7Size": 1.2,
+        "display4Font": "Cabin",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#95cadb"
+      },
+      "additionalSetColors": [
+        "#003366",
+        "#95cadb",
+        "#006699",
+        "#be880b",
+        "#0099cc",
+        "#5f7d8b",
+        "#ff0066"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.2.0",
+    "siteFonts": [
+      {
+        "css": "'Saira', sans-serif",
+        "name": "Saira",
+        "url": "https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Lato', sans-serif",
+        "name": "Lato",
+        "url": "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      },
+      {
+        "css": "'Cabin', sans-serif",
+        "name": "Cabin",
+        "url": "https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400i,500i,600i,700i"
+      },
+      {
+        "css": "'Cabin Condensed', sans-serif",
+        "name": "Cabin Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700"
+      },
+      {
+        "css": "'Inter', sans-serif",
+        "name": "Inter",
+        "url": "https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Open Sans Condensed', sans-serif",
+        "name": "Open Sans Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700"
+      },
+      {
+        "css": "'Saira Condensed', sans-serif",
+        "name": "Saira Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Condensed:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Saira Semi Condensed', sans-serif",
+        "name": "Saira Semi Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Saira Extra Condensed', sans-serif",
+        "name": "Saira Extra Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 20,
+    "versionPublish": "5.2.0",
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/logo-sociala-kanaler-endast-128x128.png",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "canonical-url": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "min-height": "56px",
+            "background-color": "@menuBgColor",
+            ".brand-name": {
+              "margin-right": "2rem",
+              "margin-top": "6px",
+              "a": {
+                "font-weight": "700"
+              }
+            },
+            ".menu-container": {
+              "padding": "0 30px"
+            },
+            ".hamburger span, .close-sidebar span": {
+              "background": "@hamburgerColor"
+            },
+            ".nav-dropdown .dropdown-menu .dropdown-item": {
+              "font-weight": "700",
+              "width": "100%",
+              "text-align": "inherit"
+            },
+            "a.nav-link": {
+              "font-weight": "700"
+            },
+            ".navbar": {
+              "min-height": "56px",
+              "background": "@menuBgColor",
+              ".navbar-collapse": {
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".navbar-collapse": {
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "flex-shrink": "0",
+              "padding": "0",
+              "margin": "0"
+            },
+            "@media (min-width: 992px)": {
+              ".navbar-expand-lg .navbar-nav .nav-link": {
+                "padding": "13px 0"
+              },
+              ".navbar-nav .nav-link": {
+                "margin": "0"
+              },
+              ".navbar-nav .nav-item": {
+                "margin": "0 18px -5px !important"
+              },
+              ".navbar-buttons": {
+                "margin-left": "2rem"
+              }
+            },
+            ".navbar-buttons .btn": {
+              "box-shadow": "none !important",
+              "transform": "none !important"
+            },
+            ".builder-sidebar, .collapse, .navbar.navbar-expand-lg .dropdown .dropdown-menu": {
+              "background-color": "@menuBgColor"
+            },
+            "@media (max-width: 991px)": {
+              ".navbar-nav a": {
+                "padding": "0 !important",
+                "margin": "0 0 1rem !important"
+              },
+              ".dropdown-menu": {
+                "padding": "0"
+              }
+            },
+            ".close-sidebar:focus": {
+              "outline": "2px auto @primaryColor"
+            },
+            "amp-img": {
+              "height": "~\"@{logoHeight}px\"",
+              "width": "~\"@{logoWidth}px\"",
+              "img": {
+                "height": "~\"@{logoHeight}px\" !important",
+                "object-fit": "contain"
+              }
+            }
+          },
+          "_name": "menu2",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"menu horizontal-menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global once=\"menu\" always-top position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"30\" max=\"120\" value=\"70\" step=\"1\" condition=\"showLogo\">\n        <input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"30\" max=\"120\" value=\"70\" step=\"1\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n        <header>Style</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected>Right</option>\n        </select>\n        <input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background\" name=\"menuBgColor\" value=\"#003366\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n\n    <nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top':sticky}\">\n       <div class=\"menu-container container-fluid\" mbr-class=\"{'mbr-jc-e': !showBrand && !showLogo}\"> \n      <div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n          <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n              <amp-img src=\"@PROJECT_PATH@/assets/images/hsb-rgb-neg-2019-70x49.png\" layout=\"responsive\" width=\"100\" height=\"70\" alt=\"HSB Stockholm\" class=\"mobirise-loader\">\n                  <div placeholder class=\"placeholder\"></div>\n                  <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/hsb-rgb-neg-2019-70x49.png\" alt=\"HSB Stockholm\">\n              </amp-img>\n          </span>\n          <p mbr-text mbr-theme-style=\"display-4\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style mbr-bold\" data-app-selector=\".brand-name\"><a href=\"https://mobiri.se\" class=\"text-primary\">Mobirise AMP</a>\n      </p></div>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"https://www.hsb.se/goteborg/fastighetsforvaltning/\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"false\" data-app-placeholder=\"Type Text\">HSB Göteborg Förvaltning</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"https://www.hsb.se/goteborg/om-hsb/\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Om HSB</a>\n                </li></ul>\n            \n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn align-center\"><a class=\"btn btn-sm btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Logga in</a></div>\n      </div>\n      <button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n          <div class=\"hamburger\">\n              <span></span>\n              <span></span>\n              <span></span>\n              <span></span>\n          </div>\n      </button>\n      <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\" mbr-if=\"showItems||showButtons\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </button>\n        </div>\n    </nav>\n\n  <!-- AMP plug -->\n    <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n        <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n            <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n                <span></span>\n                <span></span>\n            </button>\n        </div>\n    </amp-sidebar>\n\n</section>",
+          "_cid": "sjUOckI08k",
+          "_anchor": "menu2-4",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@showLine)": {
+              ".line": {
+                "border-bottom": "1px solid @lineColor",
+                "display": "inline-block",
+                "width": "50%"
+              }
+            },
+            "align-items": "center",
+            "display": "flex"
+          },
+          "_name": "ampHeader34",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampHeader34\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <input type=\"checkbox\" name=\"halfSize\" title=\"Half Size\">\n    <select title=\"Align\" name=\"alignHalf\" condition=\"halfSize\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Line\" name=\"showLine\" checked>\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#FFFFFF\" condition=\"showLine\">\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Align\" name=\"alignTitle\" condition=\"showTitle || showSubtitle || showText || showButtons\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required>\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/hsb-sthlm-fastighetsskotsel-puff-580x387.jpg\" selected>\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#003366\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\" mbr-class=\"{'align-left': alignTitle==1,\n                        'align-center': alignTitle==2,\n                        'align-right': alignTitle==3,\n                        'mbr-jc-c':alignHalf==2,\n                        'mbr-jc-e':alignHalf==3}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n            <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-6': halfSize,\n                             'mbr-col-lg-12': !halfSize}\">\n                <h2 class=\"mbr-section-subtitle text-white mbr-fonts-style mbr-semibold\" mbr-class=\"{'mbr-pt-3': showTitle}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">BEST CAR REPAIR SHOP</h2>\n                <h1 class=\"mbr-section-title text-white mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">Fastighetsförvaltning i Göteborg</h1>                \n                <p class=\"mbr-text text-white mbr-fonts-style\" mbr-class=\"{'mbr-pt-2': showTitle || showSubtitle}\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\"><b>Vår fastighetsförvaltning för bostadsrättsföreningar är en klok investering för styrelsen, för de boende och för bostadsrättsföreningens framtid.</b><br></p>\n                <div class=\"line mbr-pt-4 mbr-col-md-3\" mbr-if=\"showLine\"></div>\n                <div mbr-buttons class=\"mbr-section-btn\" mbr-class=\"{'mbr-pt-4':showSubtitle||showTitle||showText}\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn btn-info\" data-app-placeholder=\"Type Text\" href=\"index.html#ampForm4-a\">KONTAKTA OSS</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "slwbwJrdH2",
+          "_anchor": "ampHeader34-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "color": "#20202a"
+            }
+          },
+          "_name": "content4",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"content4 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Style</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c' : alignContent == 2, 'mbr-jc-e' : alignContent == 3}\">\n            <div class=\"mbr-col-sm-12 mbr-md-12 mbr-col-lg-{{textWidth}}\">\n                <p class=\"mbr-text align-center mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">HSBs fastighetsförvaltning för bostadsrättsföreningen är en enkel lösning på många problem – det är ett prisvärt och tryggt erbjudande, oavsett om ni är medlemmar i HSB eller inte. Vi kan hjälpa er med ekonomin, renoveringar, juridik, energitjänster, bosociala frågor, fastighetsskötsel och med allt annat som ska hanteras i en bostadsrättsförening.<br><br>Våra tjänster finns i olika storlekar för att tillgodose olika föreningars behov, storlek och ambitionsnivå. Vi skräddarsyr ett förvaltningsupplägg anpassat efter just din förenings behov och önskemål. Kontakta oss så tittar vi på vilken lösning som passar just er.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sluLmdbVbK",
+          "_anchor": "content4-9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-form": {
+              ".mbr-overlay": {
+                "opacity": "@formBgOpacity",
+                "background": "@formBgColor"
+              },
+              "input, textarea": {
+                "background-color": "@fieldColor",
+                "color": "@labelsColor !important",
+                "border-color": "@borderColor"
+              },
+              "& when (@showIcons)": {
+                ".iconfont-wrapper": {
+                  "position": "absolute",
+                  "top": "50%",
+                  "transform": "translateY(-50%)",
+                  "right": "~\"calc(100% - 56px)\"",
+                  "width": "~\"@{iconsSize}rem\"",
+                  "height": "~\"@{iconsSize}rem\""
+                },
+                ".amp-iconfont": {
+                  "font-size": "(@iconsSize * 1rem)"
+                }
+              },
+              ".field": {
+                "position": "relative",
+                "input": {
+                  "& when (@showIcons)": {
+                    "padding-left": "((@iconsSize + 2) * 1rem)"
+                  }
+                }
+              },
+              "input:focus, textarea:focus": {
+                "border-color": "@primaryColor"
+              },
+              "input::-webkit-input-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "input::-moz-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "textarea::-webkit-input-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "textarea::-moz-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "textarea": {
+                "min-height": "150px"
+              }
+            },
+            "& when (@transparentForm)": {
+              ".form-block": {
+                "padding": "0"
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_name": "ampForm4",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampForm4\" group=\"Forms\" plugins=\"amp-main, amp-form, amp-mustache\">\n    <mbr-parameters>\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Form</header>\n    <input type=\"range\" title=\"Form Width\" name=\"contentWidth\" min=\"1\" max=\"5\" value=\"3\" step=\"1\">\n    <select title=\"Align\" name=\"alignForm\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Field Color\" name=\"fieldColor\" value=\"#ffffff\">\n    <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#cccccc\">\n    <input type=\"color\" title=\"Form Text Color\" name=\"labelsColor\" value=\"#000000\">\n    <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n    <input type=\"range\" title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"2\" step=\"0.1\" value=\"1.5\" condition=\"showIcons\">\n    <input type=\"checkbox\" title=\"Transparent\" name=\"transparentForm\" checked>\n    <input type=\"color\" title=\"Form Bg Color\" name=\"formBgColor\" value=\"#879a9f\" condition=\"!transparentForm\" required>\n    <input type=\"range\" title=\"Form Bg Opacity\" name=\"formBgOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"!transparentForm\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required>\n        <input type=\"color\" title=\"Background Color\" value=\"#dedede\" selected>\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                        'align-right': titleAlign == 3}\">\n            <div class=\"title-block\">\n                <h3 class=\"mbr-section-title mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">KONTAKTA OSS</h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>Vill du veta mer om HSB Göteborgs förvaltningstjänster? <br>Fyll i formuläret så hör vi av oss!</b></h4>\n            </div>\n        </div>\n        <div mbr-form class=\"form-block\" mbr-class=\"{'mbr-col-lg-3': contentWidth==1,\n                         'mbr-col-lg-6': contentWidth==2,\n                         'mbr-col-lg-8': contentWidth==3,\n                         'mbr-col-lg-10': contentWidth==4,\n                         'mbr-col-lg-12': contentWidth==5,\n                         'mbr-mr-auto':alignForm == 1,\n                         'mbr-m-auto':alignForm == 2,\n                         'mbr-ml-auto':alignForm == 3}\">\n            <form class=\"mbr-form mbr-jc-c mbr-flex mbr-m-auto mbr-column\" action=\"mobririsecom@bins.se\" method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                <div class=\"mbr-overlay\" mbr-if=\"!transparentForm\"></div>\n                <div class=\"mbr-row\">\n                    <div submit-success class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                        <template data-form-alert type=\"amp-mustache\">Formuläret är skickat!</template>\n                    </div>\n                    <div submit-error class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                        <template data-form-alert type=\"amp-mustache\">Formuläret är skickat!</template>\n                    </div>\n                </div>\n                <div class=\"dragArea mbr-row\">\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][0][1]\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-user\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][0][0]\" value=\"First Name\">\n                        <input type=\"text\" name=\"form[data][0][1]\" data-form-field=\"Name\" placeholder=\"Namn och efternamn*\" required mbr-theme-style=\"display-7\" class=\"field-input\">\n                    </div>\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][1][1]\" hidden=\"hidden\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-users\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Last Name\">\n                        <input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Last Name\" placeholder=\"Last Name\" required hidden=\"hidden\" mbr-theme-style=\"display-7\" class=\"field-input\">\n                    </div>\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][2][1]\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-letter\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][2][0]\" value=\"E-mail\">\n                        <input type=\"email\" name=\"form[data][2][1]\" data-form-field=\"E-mail\" placeholder=\"E-postadress*\" required mbr-theme-style=\"display-7\" class=\"field-input\">\n                    </div>\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][3][1]\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-mobile2\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][3][0]\" value=\"Phone\">\n                        <input type=\"tel\" name=\"form[data][3][1]\" placeholder=\"Telefonnummer*\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" data-form-field=\"phone\" mbr-theme-style=\"display-7\" class=\"field-input\" value>\n                    </div>\n                    <div class=\"text-field mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][4][1]\" hidden=\"hidden\">\n                        <input type=\"hidden\" name=\"form[data][4][0]\" value=\"Message\">\n                        <textarea name=\"form[data][4][1]\" rows=\"2\" data-form-field=\"Message\" placeholder=\"Ev. meddelande\" mbr-theme-style=\"display-7\" class=\"field-input\" hidden=\"hidden\"></textarea>\n                    </div>\n                    <div class=\"mbr-section-btn align-right mbr-pt-3 mbr-col-md-12 mbr-col-sm-12 field\" data-toolbar=\"-mbrBtnMove, -mbrBtnAdd, -mbrLink\" mbr-buttons mbr-theme-style=\"display-4\"><a type=\"submit\" class=\"btn btn-md btn-primary btn-form\" data-app-placeholder=\"Type Text\">SKICKA</a></div>\n                </div>\n            </form>\n        </div>\n    </div>\n</section>",
+          "_cid": "sluNaMG4O2",
+          "_anchor": "ampForm4-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content2",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"02 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#dedede\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c' : alignContent == 2, 'mbr-jc-e' : alignContent == 3}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-bold mbr-pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    Free Website Builder\n                </h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article>☑ Jag accepterar att HSB hanterar mina personuppgifter enligt HSB's personuppgiftspolicy och GDPR.<br>Läs om hur HSB behandlar personuppgifter:&nbsp;<a href=\"https://www.hsb.se/goteborg/om-hsb/organisation-och-agarinformation/goteborg/gdpr/\" class=\"text-black\" target=\"_blank\">https://www.hsb.se/goteborg/om-hsb/organisation-och-agarinformation/goteborg/gdpr/</a><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "slwaDS7sRX",
+          "_anchor": "content2-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer1",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"footer1\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#003366\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"align-center mbr-p-1\">\n            <p class=\"mbr-text mbr-white mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">©HSB Göteborg 2020</p>\n        </div>\n    </div>\n</section>",
+          "_cid": "slv8pnhX1n",
+          "_anchor": "footer1-f",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footer",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
