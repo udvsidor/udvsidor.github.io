@@ -1,0 +1,659 @@
+{
+  "settings": {
+    "name": "Vasakronan – Lediga lokaler i Stockholm",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
+      "styling": {
+        "primaryColor": "#003366",
+        "secondaryColor": "#0014cc",
+        "successColor": "#ff5039",
+        "infoColor": "#b3d4fc",
+        "warningColor": "#eff2f2",
+        "dangerColor": "#fd7e14",
+        "mainFont": "Inter",
+        "display1Font": "Lato",
+        "display1Size": 4,
+        "display2Font": "Lato",
+        "display2Size": 3.25,
+        "display5Font": "Lato",
+        "display5Size": 1.8,
+        "display7Font": "Lato",
+        "display7Size": 1.2,
+        "display4Font": "Lato",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#95cadb"
+      },
+      "additionalSetColors": [
+        "#fd7e14",
+        "#eff2f2",
+        "#ff5039",
+        "#b3d4fc",
+        "#0014cc",
+        "#003366",
+        "#95cadb"
+      ],
+      "dynamicStyles": "// FONTS\nbody{\n    font-family: @mainFont;\n}\nblockquote{\n    border-color: @primaryColor;\n}\ndiv[submit-success] > *{\n    background: @successColor;\n    color:contrast(@successColor)\n}\ndiv[submit-error] > *{\n    background: @dangerColor;\n    color:contrast(@dangerColor)\n}\n.display-1{\n    font-family: @display1Font;\n    font-size: @display1Size *1rem;\n}\n.display-2{\n    font-family: @display2Font;\n    font-size: @display2Size *1rem;\n}\n.display-4{\n    font-family: @display4Font;\n    font-size: @display4Size *1rem;\n}\n.display-5{\n    font-family: @display5Font;\n    font-size: @display5Size *1rem;\n}\n.display-7{\n    font-family: @display7Font;\n    font-size: @display7Size *1rem;\n} \n\n// Icons\n.display-1 .mbr-iconfont-btn{\n    font-size: @display1Size *1rem;\n    width: @display1Size *1rem;\n}\n.display-2 .mbr-iconfont-btn{\n    font-size: @display2Size *1rem;\n    width: @display2Size *1rem;\n}\n.display-4 .mbr-iconfont-btn{\n    font-size: @display4Size *1rem;\n    width: @display4Size *1rem;\n}\n.display-5 .mbr-iconfont-btn{\n    font-size: @display5Size *1rem;\n    width: @display5Size *1rem;\n}\n.display-7 .mbr-iconfont-btn{\n    font-size: @display7Size *1rem;\n    width: @display7Size *1rem;\n}\n\n@media (max-width: 768px){\n    .display-1{\n        @display1Size-min: @display1Size - (@display1Size - 1) * 0.65;\n        font-size: @display1Size * 0.8rem;\n        font-size: ~\"calc( @{display1Size-min}rem + (@{display1Size} - @{display1Size-min}) * ((100vw - 20rem) / (48 - 20)))\";\n        line-height: ~\"calc( 1.4 * (@{display1Size-min}rem + (@{display1Size} - @{display1Size-min}) * ((100vw - 20rem) / (48 - 20))))\";\n    }\n    .display-2{\n        @display2Size-min: @display2Size - (@display2Size - 1) * 0.65;\n        font-size: @display2Size * 0.8rem;\n        font-size: ~\"calc( @{display2Size-min}rem + (@{display2Size} - @{display2Size-min}) * ((100vw - 20rem) / (48 - 20)))\";\n        line-height: ~\"calc( 1.4 * (@{display2Size-min}rem + (@{display2Size} - @{display2Size-min}) * ((100vw - 20rem) / (48 - 20))))\";\n    }\n    .display-4{\n        @display4Size-min: @display4Size - (@display4Size - 1) * 0.65;\n        font-size: @display4Size * 0.8rem;\n        font-size: ~\"calc( @{display4Size-min}rem + (@{display4Size} - @{display4Size-min}) * ((100vw - 20rem) / (48 - 20)))\";\n        line-height: ~\"calc( 1.4 * (@{display4Size-min}rem + (@{display4Size} - @{display4Size-min}) * ((100vw - 20rem) / (48 - 20))))\";\n    }\n    .display-5{\n        @display5Size-min: @display5Size - (@display5Size - 1) * 0.65;\n        font-size: @display5Size * 0.8rem;\n        font-size: ~\"calc( @{display5Size-min}rem + (@{display5Size} - @{display5Size-min}) * ((100vw - 20rem) / (48 - 20)))\";\n        line-height: ~\"calc( 1.4 * (@{display5Size-min}rem + (@{display5Size} - @{display5Size-min}) * ((100vw - 20rem) / (48 - 20))))\";\n    }\n    .display-7{\n        @display7Size-min: @display7Size - (@display7Size - 1) * 0.65;\n        font-size: @display7Size * 0.8rem;\n        font-size: ~\"calc( @{display7Size-min}rem + (@{display7Size} - @{display7Size-min}) * ((100vw - 20rem) / (48 - 20)))\";\n        line-height: ~\"calc( 1.4 * (@{display7Size-min}rem + (@{display7Size} - @{display7Size-min}) * ((100vw - 20rem) / (48 - 20))))\";\n    }\n}\n\n/* Buttons */\n.button-variant(@background){\n    @color:contrast(@background, darken(@background, 50%), #ffffff, 60%);\n    @border: @background;\n    @active-color: @color;\n    @active-border: @active-background;\n\n    @active-background: if(\n        eq(@background, @color),\n        #d4d4d4,\n        darken(@background, 15%)\n        );\n    &,\n    &:active,\n    &.active{\n        background-color: @background !important;\n        border-color: @border !important;\n        color: @color !important;\n    }\n    &:hover,\n    &:focus,\n    &.focus{\n        color: @active-color !important;\n        background-color: @active-background !important;\n        border-color: @active-border !important;\n    }\n    &.disabled, &:disabled{\n        color: @active-color !important;\n        background-color: @active-background !important;\n        border-color: @active-border !important;\n    }\n\n}\n.button-outline-variant(@color){\n    @active-color: contrast(@color, darken(@color, 50%), #ffffff, 60%);\n    @active-background: @color;\n    @new-color: if(\n        eq(@color, @active-color),\n        #fff,\n        darken(@color, 20%)\n        );\n    &,\n    &:active,\n    &.active{\n        background: none !important;\n        border-color: @new-color !important;\n        color: @new-color !important;\n    }\n\n    &:hover,\n    &:focus,\n    &.focus{\n        color: @active-color !important;\n        background-color: @active-background !important;\n        border-color: @active-background !important;\n    }\n\n    &.disabled, &:disabled{\n        color: @active-color !important;\n        background-color: @active-background !important;\n        border-color: @active-background !important;\n    }\n}\n.plan-variant(@className, @color){\n    &@{className}{\n        .mbr-plan-subtitle,\n        .mbr-plan-price-desc{\n            @max: max(red(@color), green(@color), blue(@color));\n            & when (@max > 200){\n                color: lighten(@color, 40%);\n            }\n            & when (@max > 85) and (@max <= 200){\n                color: lighten(@color, 25%);\n            }\n            & when (@max > 50) and (@max <= 85){\n                color: lighten(@color, 45%);\n            }\n            & when (@max <= 50){\n                color: lighten(@color, 70%);\n            }\n        }\n    }\n}\n\n.bg-primary{ background-color: @primaryColor !important; }\n.bg-success{ background-color: @successColor !important; }\n.bg-info{ background-color: @infoColor !important; }\n.bg-warning{ background-color: @warningColor !important; }\n.bg-danger{ background-color: @dangerColor !important; }\n\n.btn-primary{ .button-variant(@primaryColor); }\n.btn-secondary{ .button-variant(@secondaryColor); }\n.btn-info{ .button-variant(@infoColor); }\n.btn-success{ .button-variant(@successColor); }\n.btn-warning{ .button-variant(@warningColor); }\n.btn-danger{ .button-variant(@dangerColor); }\n.btn-black{ .button-variant(#333333); }\n.btn-white{ .button-variant(#ffffff); \n    &,\n    &:active,\n    &.active{\n        color: #333333 !important; \n    }\n\n    &:hover,\n    &:focus,\n    &.focus{\n        color: #333333 !important; \n    }\n\n    &.disabled, &:disabled{\n        color: #333333 !important; \n    }\n}\n\n.btn-primary-outline{ .button-outline-variant(@primaryColor); }\n.btn-secondary-outline{ .button-outline-variant(@secondaryColor); }\n.btn-info-outline{ .button-outline-variant(@infoColor); }\n.btn-success-outline{ .button-outline-variant(@successColor); }\n.btn-warning-outline{ .button-outline-variant(@warningColor); }\n.btn-danger-outline{ .button-outline-variant(@dangerColor); }\n.btn-black-outline{ .button-outline-variant(#333333); }\n.btn-white-outline{\n    &,\n    &:active,\n    &.active{\n        background: none;\n        border-color: #ffffff;\n        color: #ffffff !important;\n    }\n\n    &:hover,\n    &:focus,\n    &.focus{\n        color: #333333 !important;\n        background-color: #ffffff;\n        border-color: #ffffff;\n    }\n\n}\n\n.text-primary{ color: @primaryColor !important; }\n.text-secondary{ color: @secondaryColor !important; }\n.text-success{ color: @successColor !important; }\n.text-info{ color: @infoColor !important; }\n.text-warning{ color: @warningColor !important; }\n.text-danger{ color: @dangerColor !important; }\n.text-white{ color: #ffffff !important; }\n.text-black{ color: #000000 !important; }\n\na.text-primary:hover, a.text-primary:focus{ color: darken(@primaryColor, 20%) !important; }\na.text-secondary:hover, a.text-secondary:focus{ color: darken(@secondaryColor, 20%) !important; }\na.text-success:hover, a.text-success:focus{ color: darken(@successColor, 20%) !important; }\na.text-info:hover, a.text-info:focus{ color: darken(@infoColor, 20%) !important; }\na.text-warning:hover, a.text-warning:focus{ color: darken(@warningColor, 20%) !important; }\na.text-danger:hover, a.text-danger:focus{ color: darken(@dangerColor, 20%) !important; }\na.text-white:hover, a.text-white:focus{ color: darken(#ffffff, 20%) !important; }\na.text-black:hover, a.text-black:focus{ color: lighten(#000000, 30%) !important;  }\n\n.alert-success{ background-color: @successColor; }\n.alert-info{ background-color: @infoColor; }\n.alert-warning{ background-color: @warningColor; }\n.alert-danger{ background-color: @dangerColor; }\n\n.mbr-section-btn a.btn:not(.btn-form) when(@isRoundedButtons){\n    border-radius: 100px;\n    // transition-property: background-color, color, border-color, box-shadow;\n    // transition-duration: .3s,.3s,.3s,.8s;\n    // transition-timing-function:ease-in-out;\n    // &:hover{\n    //     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, .2);\n    // }\n}\n.nav-tabs .nav-link when(@isRoundedButtons){\n    border-radius: 100px !important;\n}\n\na, a:hover{ color: @primaryColor; }\n\n.mbr-plan-header{\n    .plan-variant(~'.bg-primary', @primaryColor);\n    .plan-variant(~'.bg-success', @successColor);\n    .plan-variant(~'.bg-info', @infoColor);\n    .plan-variant(~'.bg-warning', @warningColor);\n    .plan-variant(~'.bg-danger', @dangerColor);\n}\n\n// Mobirise Spinner colors\n.mobirise-spinner em:nth-child(1){\n    background: @primaryColor;\n}\n.mobirise-spinner em:nth-child(2){\n    background: @secondaryColor;\n}\n.mobirise-spinner em:nth-child(3){\n    background: @successColor;\n}\n\n// Scroll to Top button\n#scrollToTopMarker when not (@isScrollToTopButton) {\n    display: none;\n}\n#scrollToTopButton {\n    background-color: @arrowColor;\n    & when (@isRoundedButtons) {\n        border-radius: 50%;\n    }\n    a {\n        &:before {\n            background: contrast(@arrowColor);\n        }\n        &:after {\n            border-top-color: contrast(@arrowColor);\n            border-right-color: contrast(@arrowColor);\n        }\n    }\n}\n\n// user style \n\n.btn:not(.btn-form) {\n    box-shadow: 0 0px 0px 0px rgba(0,0,0,.25);\n    &:hover,\n    &:focus,\n    &.focus {\n        transform: translateY(-.125rem);\n        box-shadow: 0 25px 20px -15px rgba(0,0,0,.15);\n    }\n}\n\n.amp-carousel-button {\n    box-shadow: 0 10px 15px 0 rgba(0,0,0,.4);\n    background-color: #f3f3f3;\n    &:hover {\n        background-color: #fff;\n        box-shadow: 0 20px 30px 0 rgba(0,0,0,.2);\n    }\n}\n.amp-carousel-button-next {\n    background-image: url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23005AF0' %3E%3Cpath d='M9 3L7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z'/%3E%3C/svg%3E\");\n}\n.amp-carousel-button-prev {\n    background-image: url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23005AF0'%3E%3Cpath d='M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z'/%3E%3C/svg%3E\");\n}\n\n\n\n"
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.2.0",
+    "siteFonts": [
+      {
+        "css": "'Saira', sans-serif",
+        "name": "Saira",
+        "url": "https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Lato', sans-serif",
+        "name": "Lato",
+        "url": "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      },
+      {
+        "css": "'Cabin', sans-serif",
+        "name": "Cabin",
+        "url": "https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400i,500i,600i,700i"
+      },
+      {
+        "css": "'Cabin Condensed', sans-serif",
+        "name": "Cabin Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700"
+      },
+      {
+        "css": "'Inter', sans-serif",
+        "name": "Inter",
+        "url": "https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Open Sans Condensed', sans-serif",
+        "name": "Open Sans Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700"
+      },
+      {
+        "css": "'Saira Condensed', sans-serif",
+        "name": "Saira Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Condensed:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Saira Semi Condensed', sans-serif",
+        "name": "Saira Semi Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Saira Extra Condensed', sans-serif",
+        "name": "Saira Extra Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 48,
+    "versionPublish": "5.2.0",
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/vasakronan-favicon-v-128x153.png",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "min-height": "56px",
+            "background-color": "@menuBgColor",
+            ".brand-name": {
+              "margin-right": "2rem",
+              "margin-top": "6px",
+              "a": {
+                "font-weight": "700"
+              }
+            },
+            ".menu-container": {
+              "padding": "0 30px"
+            },
+            ".hamburger span, .close-sidebar span": {
+              "background": "@hamburgerColor"
+            },
+            ".nav-dropdown .dropdown-menu .dropdown-item": {
+              "font-weight": "700",
+              "width": "100%",
+              "text-align": "inherit"
+            },
+            "a.nav-link": {
+              "font-weight": "700"
+            },
+            ".navbar": {
+              "min-height": "56px",
+              "background": "@menuBgColor",
+              ".navbar-collapse": {
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".navbar-collapse": {
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "flex-shrink": "0",
+              "padding": "0",
+              "margin": "0"
+            },
+            "@media (min-width: 992px)": {
+              ".navbar-expand-lg .navbar-nav .nav-link": {
+                "padding": "13px 0"
+              },
+              ".navbar-nav .nav-link": {
+                "margin": "0"
+              },
+              ".navbar-nav .nav-item": {
+                "margin": "0 18px -5px !important"
+              },
+              ".navbar-buttons": {
+                "margin-left": "2rem"
+              }
+            },
+            ".navbar-buttons .btn": {
+              "box-shadow": "none !important",
+              "transform": "none !important"
+            },
+            ".builder-sidebar, .collapse, .navbar.navbar-expand-lg .dropdown .dropdown-menu": {
+              "background-color": "@menuBgColor"
+            },
+            "@media (max-width: 991px)": {
+              ".navbar-nav a": {
+                "padding": "0 !important",
+                "margin": "0 0 1rem !important"
+              },
+              ".dropdown-menu": {
+                "padding": "0"
+              }
+            },
+            ".close-sidebar:focus": {
+              "outline": "2px auto @primaryColor"
+            },
+            "amp-img": {
+              "height": "~\"@{logoHeight}px\"",
+              "width": "~\"@{logoWidth}px\"",
+              "img": {
+                "height": "~\"@{logoHeight}px\" !important",
+                "object-fit": "contain"
+              }
+            }
+          },
+          "_name": "menu2",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"menu horizontal-menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked=\"\">\n        <input type=\"range\" title=\"Logo Height\" inline=\"\" name=\"logoHeight\" min=\"30\" max=\"120\" value=\"35\" step=\"1\" condition=\"showLogo\">\n        <input type=\"range\" title=\"Logo Width\" inline=\"\" name=\"logoWidth\" min=\"30\" max=\"120\" value=\"120\" step=\"1\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked=\"\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n        <header>Style</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected=\"\">Right</option>\n        </select>\n        <input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#20202a\">\n        <input type=\"color\" title=\"Background\" name=\"menuBgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n\n    <nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top':sticky}\">\n       <div class=\"menu-container container-fluid\" mbr-class=\"{'mbr-jc-e': !showBrand &amp;&amp; !showLogo}\"> \n      <div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n          <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n              <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-logotyp-svart-140x21.png\" layout=\"responsive\" width=\"233.33333333333334\" height=\"35\" alt=\"Vasakronan\" class=\"mobirise-loader\">\n                  <div placeholder=\"\" class=\"placeholder\"></div>\n                  <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-logotyp-svart-140x21.png\" alt=\"Vasakronan\">\n              </amp-img>\n          </span>\n          <p mbr-text=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style mbr-bold\" data-app-selector=\".brand-name\"><a href=\"https://mobiri.se\" class=\"text-primary\">Mobirise AMP</a>\n      </p></div>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <ul mbr-menu=\"\" class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'navbar-nav-top-padding': isPublish &amp;&amp; !showBrand &amp;&amp; !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-black text-primary\" href=\"https://vasakronan.se/lediga-lokaler/\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"false\" data-app-placeholder=\"Type Text\">Lediga lokaler</a></li>\n                \n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-black text-primary\" href=\"https://vasakronan.se/om-vasakronan/\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Om Vasakronan</a>\n                </li></ul>\n            \n            <div mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn align-center\"><a class=\"btn btn-sm btn-info\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Logga in</a></div>\n      </div>\n      <button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n          <div class=\"hamburger\">\n              <span></span>\n              <span></span>\n              <span></span>\n              <span></span>\n          </div>\n      </button>\n      <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\" mbr-if=\"showItems||showButtons\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </button>\n        </div>\n    </nav>\n\n  <!-- AMP plug -->\n    <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n        <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n            <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n                <span></span>\n                <span></span>\n            </button>\n        </div>\n    </amp-sidebar>\n\n</section>",
+          "_cid": "sjUOckI08k",
+          "_anchor": "menu2-4",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@showLine)": {
+              ".line": {
+                "border-bottom": "1px solid @lineColor",
+                "display": "inline-block",
+                "width": "50%"
+              }
+            },
+            "align-items": "center",
+            "display": "flex"
+          },
+          "_name": "ampHeader34",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampHeader34\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n    <input type=\"checkbox\" name=\"halfSize\" title=\"Half Size\">\n    <select title=\"Align\" name=\"alignHalf\" condition=\"halfSize\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Line\" name=\"showLine\" checked>\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#FFFFFF\" condition=\"showLine\">\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Align\" name=\"alignTitle\" condition=\"showTitle || showSubtitle || showText || showButtons\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required>\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/vasakronan-lediga-lokaler-sthlm-1900x1272.jpg\" selected>\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#20202a\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\" mbr-class=\"{'align-left': alignTitle==1,\n                        'align-center': alignTitle==2,\n                        'align-right': alignTitle==3,\n                        'mbr-jc-c':alignHalf==2,\n                        'mbr-jc-e':alignHalf==3}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n            <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-6': halfSize,\n                             'mbr-col-lg-12': !halfSize}\">\n                <h2 class=\"mbr-section-subtitle text-white mbr-fonts-style mbr-semibold\" mbr-class=\"{'mbr-pt-3': showTitle}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">BEST CAR REPAIR SHOP</h2>\n                <h1 class=\"mbr-section-title text-white mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">Lediga lokaler i Stockholm</h1>                \n                <p class=\"mbr-text text-white mbr-fonts-style\" mbr-class=\"{'mbr-pt-2': showTitle || showSubtitle}\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\">I Stockholm kan vi erbjuda lokaler i många olika lägen, från mitt i city till närförorter utanför tullarna med bra kommunikationer och annan service. De lokaler som finns att hyra är främst kontor och kontorshotell.&nbsp;<br></p>\n                <div class=\"line mbr-pt-4 mbr-col-md-3\" mbr-if=\"showLine\"></div>\n                <div mbr-buttons class=\"mbr-section-btn\" mbr-class=\"{'mbr-pt-4':showSubtitle||showTitle||showText}\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn btn-danger\" data-app-placeholder=\"Type Text\" href=\"index.html#ampForm4-19\">KONTAKTA OSS</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "slwbwJrdH2",
+          "_anchor": "ampHeader34-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              ".mbr-overlay when (@twoBgColor)": {
+                "padding": "0",
+                "background": "@twoColor",
+                "opacity": "1"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".card-wrapper, .card-wrapper .card-box": {
+              "position": "relative"
+            },
+            ".card-wrapper .mbr-overlay when not (@transparentBg)": {
+              "background": "@cardBg",
+              "opacity": "@cardOpacity"
+            },
+            ".card-wrapper when (@showBorders)": {
+              "border": "1px solid @bordersColor"
+            },
+            ".card-img when (@showImgOverlay)": {
+              "amp-img": {
+                "position": "relative",
+                "&:before": {
+                  "content": "\"\"",
+                  "position": "absolute",
+                  "height": "100%",
+                  "width": "100%",
+                  "z-index": "1",
+                  "pointer-events": "none",
+                  "-webkit-transition": "all 0.2s ease",
+                  "transition": "all 0.2s ease"
+                },
+                "> a:before when (@showImgButton)": {
+                  "content": "\"＋\"",
+                  "position": "absolute",
+                  "top": "50%",
+                  "left": "50%",
+                  "font-size": "40px",
+                  "transform": "translate(-50%, -50%)",
+                  "color": "transparent",
+                  "z-index": "2",
+                  "-webkit-transition": "all 0.2s ease",
+                  "transition": "all 0.2s ease"
+                }
+              },
+              "&:hover": {
+                "amp-img:before": {
+                  "background-color": "@imgOverlayColor",
+                  "opacity": "@imgOverlayOpacity"
+                },
+                "amp-img > a:before when (@showImgButton)": {
+                  "color": "contrast(@imgOverlayColor, darken(@imgOverlayColor, 50%), #ffffff, 60%)"
+                }
+              }
+            }
+          },
+          "_name": "ampEvents22",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampEvents22\" group=\"Events\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n            <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n            <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n            <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <header>Title</header>\n            <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n            <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n            <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n                <option value=\"1\" selected>Left</option>\n                <option value=\"2\">Center</option>\n                <option value=\"3\">Right</option>\n            </select>\n        \n        <header>Cards</header>\n            <input type=\"range\" inline title=\"Count\" name=\"cardsAmount\" min=\"1\" max=\"4\" step=\"1\" value=\"3\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg\">\n            <input type=\"checkbox\" title=\"Show Post Category\" name=\"showCardsCategory\" checked>\n            <input type=\"checkbox\" title=\"Show Post Date\" name=\"showCardsDate\">\n            <input type=\"checkbox\" title=\"Show Title\" name=\"showCardsTitle\" checked>\n            <input type=\"checkbox\" title=\"Show Text\" name=\"showCardsText\" checked>\n            <input type=\"checkbox\" title=\"Show Buttons\" name=\"showCardsButtons\" checked>\n            <select title=\"Align\" name=\"cardsAlign\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\">\n                <option value=\"1\" selected>Left</option>\n                <option value=\"2\">Center</option>\n                <option value=\"3\">Right</option>\n            </select>\n            <input type=\"checkbox\" title=\"Show Image\" name=\"showImg\" checked>\n            <input type=\"checkbox\" title=\"Image Overlay\" name=\"showImgOverlay\" condition=\"showImg\" checked>\n            <input type=\"color\" title=\"Image Overlay Color\" name=\"imgOverlayColor\" value=\"#000000\" condition=\"showImg && showImgOverlay\">\n            <input type=\"range\" inline title=\"Image Overlay Opacity\" name=\"imgOverlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"showImg && showImgOverlay\">\n            <input type=\"checkbox\" title=\"Show Image Button\" name=\"showImgButton\" condition=\"showImg && showImgOverlay\" checked>\n            <input type=\"checkbox\" title=\"Borders\" name=\"showBorders\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg\">\n            <input type=\"color\" title=\"Color\" name=\"bordersColor\" value=\"#cccccc\" condition=\"showBorders && (showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg)\">\n            <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg\" checked>\n            <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#bec1c7\" condition=\"!transparentBg && (showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg)\">\n            <input type=\"range\" inline title=\"Opacity\" name=\"cardOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"!transparentBg && (showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg)\">\n        \n        <header>Background</header>\n            <input type=\"checkbox\" title=\"2 Background Color\" name=\"twoBgColor\" condition=\"bg.type == 'color'\"> \n            <input type=\"range\" inline title=\"Width 2 Bg\" name=\"width2Bg\" min=\"1\" max=\"5\" step=\"1\" value=\"4\" condition=\"twoBgColor && bg.type == 'color'\">    \n            <fieldset type=\"background\" name=\"bg\">\n                <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n                <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            </fieldset>\n            <input type=\"color\" title=\"2 Color\" name=\"twoColor\" value=\"#f4f5f7\" condition=\"twoBgColor && bg.type == 'color'\">  \n            <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n            <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n            <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type !== 'color') || (twoBgColor && bg.type == 'color')\" mbr-class=\"{'mbr-col-md-4': width2Bg == 1 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-5': width2Bg == 2 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-6': width2Bg == 3 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-7': width2Bg == 4 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-8': width2Bg == 5 && twoBgColor && bg.type == 'color'}\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title-wrap mbr-pb-4\" mbr-class=\"{'mbr-px-2': fullWidth, 'align-left': titleAlign == 1, 'align-center': titleAlign == 2, 'align-right': titleAlign == 3}\" mbr-if=\"showTitle || showSubtitle\">        \n            <h2 class=\"mbr-section-title mbr-semibold mbr-fonts-style\" mbr-class=\"{'mbr-pb-2':showSubtitle}\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".title-wrap .mbr-section-title\">\n                Features with Images\n            </h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".title-wrap .mbr-section-subtitle\">\n                Features with Images Subtitle\n            </h3>\n        </div>\n        <div class=\"mbr-row mbr-jc-c card-container\" mbr-if=\"showCardsTitle || showCardsCategory || showCardsDate || showCardsText || showCardsButtons || showImg\" mbr-class=\"{'mbr-px-2': fullWidth, 'cardsAmount2': cardsAmount == 2}\">\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6': cardsAmount < 3,\n                                          'mbr-col-md-4': cardsAmount == 3,\n                                          'mbr-col-lg-3 mbr-col-md-6 md-pb': cardsAmount == 4,\n                                          'last-child': cardsAmount == 1,\n                                          'mbr-col-lg-6': cardsAmount == 2}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                    <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-1-696x464.jpeg\" layout=\"responsive\" width=\"347.97340206185567\" class=\"mobirise-loader\" height=\"195.672\" alt=\"Alvik\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-1-696x464.jpeg\" alt=\"Alvik\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            KONTOR</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">Gustavslundsvägen 133, plan 10 · Otrolig sjöutsikt! · 292 m2</h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">Kontor i Stockholm, Alviks Strand.<br>18–25 arbetsplatser.</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                                Läs mer om lokalen</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-6 mbr-col-md-6 last-child': cardsAmount == 2,\n                                          'mbr-col-md-4': cardsAmount == 3,\n                                          'mbr-col-lg-3 mbr-col-md-6 md-pb': cardsAmount == 4}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                        <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-2-696x422.jpeg\" layout=\"responsive\" width=\"347.97604947916665\" class=\"mobirise-loader\" height=\"195.641\" alt=\"Alvik 2\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-2-696x422.jpeg\" alt=\"Alvik 2\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            KONTOR</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">Gustavslundsvägen 135 · Utsikt över Mälaren · 628 m2</h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">Kontor i Stockholm, Alviks Strand.<br>50 arbetsplatser.&nbsp;</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                                Läs mer om lokalen</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-4': cardsAmount == 3,\n                                          'mbr-col-lg-3 mbr-col-md-6': cardsAmount == 4,\n                                          'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                    <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-3-696x464.jpeg\" layout=\"responsive\" width=\"347.97340206185567\" class=\"mobirise-loader\" height=\"195.672\" alt=\"Alvik 3\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-3-696x464.jpeg\" alt=\"Alvik 3\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            KONTOR</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">Gustavslundsvägen 135 · Två plan med interntrappa · 1505 m2</h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">Kontor i Stockholm, Alviks Strand.&nbsp;<br>125 arbetsplatser.</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                                Läs mer om lokalen</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3 mbr-col-md-6': cardsAmount == 4,\n                                          'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                    <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/25.jpg\" layout=\"responsive\" width=\"16\" class=\"mobirise-loader\" height=\"9\" alt=\"Mobirise\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/25.jpg\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            Finance</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">\n                            Business Consulting Conference\n                        </h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-primary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                READ MORE</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "slOebfFqFD",
+          "_anchor": "ampEvents22-17",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              ".mbr-overlay when (@twoBgColor)": {
+                "padding": "0",
+                "background": "@twoColor",
+                "opacity": "1"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".card-wrapper, .card-wrapper .card-box": {
+              "position": "relative"
+            },
+            ".card-wrapper .mbr-overlay when not (@transparentBg)": {
+              "background": "@cardBg",
+              "opacity": "@cardOpacity"
+            },
+            ".card-wrapper when (@showBorders)": {
+              "border": "1px solid @bordersColor"
+            },
+            ".card-img when (@showImgOverlay)": {
+              "amp-img": {
+                "position": "relative",
+                "&:before": {
+                  "content": "\"\"",
+                  "position": "absolute",
+                  "height": "100%",
+                  "width": "100%",
+                  "z-index": "1",
+                  "pointer-events": "none",
+                  "-webkit-transition": "all 0.2s ease",
+                  "transition": "all 0.2s ease"
+                },
+                "> a:before when (@showImgButton)": {
+                  "content": "\"＋\"",
+                  "position": "absolute",
+                  "top": "50%",
+                  "left": "50%",
+                  "font-size": "40px",
+                  "transform": "translate(-50%, -50%)",
+                  "color": "transparent",
+                  "z-index": "2",
+                  "-webkit-transition": "all 0.2s ease",
+                  "transition": "all 0.2s ease"
+                }
+              },
+              "&:hover": {
+                "amp-img:before": {
+                  "background-color": "@imgOverlayColor",
+                  "opacity": "@imgOverlayOpacity"
+                },
+                "amp-img > a:before when (@showImgButton)": {
+                  "color": "contrast(@imgOverlayColor, darken(@imgOverlayColor, 50%), #ffffff, 60%)"
+                }
+              }
+            }
+          },
+          "_name": "ampEvents22",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampEvents22\" group=\"Events\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n            <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n            <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n            <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <header>Title</header>\n            <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n            <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n            <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n                <option value=\"1\" selected>Left</option>\n                <option value=\"2\">Center</option>\n                <option value=\"3\">Right</option>\n            </select>\n        \n        <header>Cards</header>\n            <input type=\"range\" inline title=\"Count\" name=\"cardsAmount\" min=\"1\" max=\"4\" step=\"1\" value=\"3\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg\">\n            <input type=\"checkbox\" title=\"Show Post Category\" name=\"showCardsCategory\" checked>\n            <input type=\"checkbox\" title=\"Show Post Date\" name=\"showCardsDate\">\n            <input type=\"checkbox\" title=\"Show Title\" name=\"showCardsTitle\" checked>\n            <input type=\"checkbox\" title=\"Show Text\" name=\"showCardsText\" checked>\n            <input type=\"checkbox\" title=\"Show Buttons\" name=\"showCardsButtons\" checked>\n            <select title=\"Align\" name=\"cardsAlign\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\">\n                <option value=\"1\" selected>Left</option>\n                <option value=\"2\">Center</option>\n                <option value=\"3\">Right</option>\n            </select>\n            <input type=\"checkbox\" title=\"Show Image\" name=\"showImg\" checked>\n            <input type=\"checkbox\" title=\"Image Overlay\" name=\"showImgOverlay\" condition=\"showImg\" checked>\n            <input type=\"color\" title=\"Image Overlay Color\" name=\"imgOverlayColor\" value=\"#000000\" condition=\"showImg && showImgOverlay\">\n            <input type=\"range\" inline title=\"Image Overlay Opacity\" name=\"imgOverlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"showImg && showImgOverlay\">\n            <input type=\"checkbox\" title=\"Show Image Button\" name=\"showImgButton\" condition=\"showImg && showImgOverlay\" checked>\n            <input type=\"checkbox\" title=\"Borders\" name=\"showBorders\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg\">\n            <input type=\"color\" title=\"Color\" name=\"bordersColor\" value=\"#cccccc\" condition=\"showBorders && (showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg)\">\n            <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\" condition=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg\" checked>\n            <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#bec1c7\" condition=\"!transparentBg && (showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg)\">\n            <input type=\"range\" inline title=\"Opacity\" name=\"cardOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"!transparentBg && (showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons || showImg)\">\n        \n        <header>Background</header>\n            <input type=\"checkbox\" title=\"2 Background Color\" name=\"twoBgColor\" condition=\"bg.type == 'color'\"> \n            <input type=\"range\" inline title=\"Width 2 Bg\" name=\"width2Bg\" min=\"1\" max=\"5\" step=\"1\" value=\"4\" condition=\"twoBgColor && bg.type == 'color'\">    \n            <fieldset type=\"background\" name=\"bg\">\n                <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n                <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            </fieldset>\n            <input type=\"color\" title=\"2 Color\" name=\"twoColor\" value=\"#f4f5f7\" condition=\"twoBgColor && bg.type == 'color'\">  \n            <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n            <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n            <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay && bg.type !== 'color') || (twoBgColor && bg.type == 'color')\" mbr-class=\"{'mbr-col-md-4': width2Bg == 1 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-5': width2Bg == 2 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-6': width2Bg == 3 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-7': width2Bg == 4 && twoBgColor && bg.type == 'color',\n                     'mbr-col-md-8': width2Bg == 5 && twoBgColor && bg.type == 'color'}\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title-wrap mbr-pb-4\" mbr-class=\"{'mbr-px-2': fullWidth, 'align-left': titleAlign == 1, 'align-center': titleAlign == 2, 'align-right': titleAlign == 3}\" mbr-if=\"showTitle || showSubtitle\">        \n            <h2 class=\"mbr-section-title mbr-semibold mbr-fonts-style\" mbr-class=\"{'mbr-pb-2':showSubtitle}\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".title-wrap .mbr-section-title\">\n                Features with Images\n            </h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".title-wrap .mbr-section-subtitle\">\n                Features with Images Subtitle\n            </h3>\n        </div>\n        <div class=\"mbr-row mbr-jc-c card-container\" mbr-if=\"showCardsTitle || showCardsCategory || showCardsDate || showCardsText || showCardsButtons || showImg\" mbr-class=\"{'mbr-px-2': fullWidth, 'cardsAmount2': cardsAmount == 2}\">\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6': cardsAmount < 3,\n                                          'mbr-col-md-4': cardsAmount == 3,\n                                          'mbr-col-lg-3 mbr-col-md-6 md-pb': cardsAmount == 4,\n                                          'last-child': cardsAmount == 1,\n                                          'mbr-col-lg-6': cardsAmount == 2}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                    <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-1-696x464.jpeg\" layout=\"responsive\" width=\"347.97340206185567\" class=\"mobirise-loader\" height=\"195.672\" alt=\"Alvik\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-1-696x464.jpeg\" alt=\"Alvik\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            KONTOR</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">Gustavslundsvägen 133, plan 10 · Otrolig sjöutsikt! · 292 m2</h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">Kontor i Stockholm, Alviks Strand.<br>18–25 arbetsplatser.</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                                Läs mer om lokalen</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-6 mbr-col-md-6 last-child': cardsAmount == 2,\n                                          'mbr-col-md-4': cardsAmount == 3,\n                                          'mbr-col-lg-3 mbr-col-md-6 md-pb': cardsAmount == 4}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                        <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-2-696x422.jpeg\" layout=\"responsive\" width=\"347.97604947916665\" class=\"mobirise-loader\" height=\"195.641\" alt=\"Alvik 2\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-2-696x422.jpeg\" alt=\"Alvik 2\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            KONTOR</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">Gustavslundsvägen 135 · Utsikt över Mälaren · 628 m2</h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">Kontor i Stockholm, Alviks Strand.<br>50 arbetsplatser.&nbsp;</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                                Läs mer om lokalen</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-4': cardsAmount == 3,\n                                          'mbr-col-lg-3 mbr-col-md-6': cardsAmount == 4,\n                                          'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                    <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-3-696x464.jpeg\" layout=\"responsive\" width=\"347.97340206185567\" class=\"mobirise-loader\" height=\"195.672\" alt=\"Alvik 3\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vasakronan-alvik-3-696x464.jpeg\" alt=\"Alvik 3\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            KONTOR</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">Gustavslundsvägen 135 · Två plan med interntrappa · 1505 m2</h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">Kontor i Stockholm, Alviks Strand.&nbsp;<br>125 arbetsplatser.</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                                Läs mer om lokalen</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3 mbr-col-md-6': cardsAmount == 4,\n                                          'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"mbr-overlay\" mbr-if=\"!transparentBg\"></div>\n                    <div class=\"card-img\" mbr-if=\"showImg\" mbr-class=\"{'img-with-overlay': showImgOverlay}\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/25.jpg\" layout=\"responsive\" width=\"16\" class=\"mobirise-loader\" height=\"9\" alt=\"Mobirise\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/25.jpg\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showCardsCategory || showCardsDate || showCardsTitle || showCardsText || showCardsButtons\" mbr-class=\"{'mbr-pt-4': showImg &amp;&amp; cardsAmount < 3, 'mbr-pt-3': showImg &amp;&amp; cardsAmount > 2, 'mbr-p-2': showBorders || !transparentBg, 'align-center': cardsAlign == 2, 'align-right': cardsAlign == 3, 'mbr-col-sm-12': fullWidth}\">\n                        <p class=\"card-category mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsCategory\" data-app-selector=\".card-category\" mbr-class=\"{'mbr-pb-1':showCardsText || showCardsDate || showCardsTitle}\">\n                            Finance</p>\n                        <h3 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\" mbr-class=\"{'mbr-pb-2':showCardsText || showCardsDate}\">\n                            Business Consulting Conference\n                        </h3>\n                        <p class=\"card-date mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsDate\" data-app-selector=\".card-date\" mbr-class=\"{'mbr-pb-2':showCardsText}\">\n                            June 28, 2025</p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card .mbr-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n                        <div class=\"card-btn mbr-section-btn\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\" mbr-class=\"{'mbr-pt-3':showCardsText || showCardsDate || showCardsTitle}\"><a class=\"btn btn-md btn-primary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                READ MORE</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "ampEvents22-18",
+          "_isUserblock": true,
+          "_cid": "slOfPpUVML",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-form": {
+              ".mbr-overlay": {
+                "opacity": "@formBgOpacity",
+                "background": "@formBgColor"
+              },
+              "input, textarea": {
+                "background-color": "@fieldColor",
+                "color": "@labelsColor !important",
+                "border-color": "@borderColor"
+              },
+              "& when (@showIcons)": {
+                ".iconfont-wrapper": {
+                  "position": "absolute",
+                  "top": "50%",
+                  "transform": "translateY(-50%)",
+                  "right": "~\"calc(100% - 56px)\"",
+                  "width": "~\"@{iconsSize}rem\"",
+                  "height": "~\"@{iconsSize}rem\""
+                },
+                ".amp-iconfont": {
+                  "font-size": "(@iconsSize * 1rem)"
+                }
+              },
+              ".field": {
+                "position": "relative",
+                "input": {
+                  "& when (@showIcons)": {
+                    "padding-left": "((@iconsSize + 2) * 1rem)"
+                  }
+                }
+              },
+              "input:focus, textarea:focus": {
+                "border-color": "@primaryColor"
+              },
+              "input::-webkit-input-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "input::-moz-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "textarea::-webkit-input-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "textarea::-moz-placeholder": {
+                "color": "fade(@labelsColor, 50%)"
+              },
+              "textarea": {
+                "min-height": "150px"
+              }
+            },
+            "& when (@transparentForm)": {
+              ".form-block": {
+                "padding": "0"
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#20202a"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "center",
+              "color": "#20202a"
+            }
+          },
+          "_name": "ampForm4",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampForm4\" group=\"Forms\" plugins=\"amp-main, amp-form, amp-mustache\">\n    <mbr-parameters>\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Form</header>\n    <input type=\"range\" title=\"Form Width\" name=\"contentWidth\" min=\"1\" max=\"5\" value=\"3\" step=\"1\">\n    <select title=\"Align\" name=\"alignForm\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Field Color\" name=\"fieldColor\" value=\"#eff2f2\">\n    <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#ffffff\">\n    <input type=\"color\" title=\"Form Text Color\" name=\"labelsColor\" value=\"#000000\">\n    <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n    <input type=\"range\" title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"2\" step=\"0.1\" value=\"1.5\" condition=\"showIcons\">\n    <input type=\"checkbox\" title=\"Transparent\" name=\"transparentForm\" checked>\n    <input type=\"color\" title=\"Form Bg Color\" name=\"formBgColor\" value=\"#879a9f\" condition=\"!transparentForm\" required>\n    <input type=\"range\" title=\"Form Bg Opacity\" name=\"formBgOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"!transparentForm\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required>\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/dina-bil-soluppgang-1140x400.jpg\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#003e23\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                        'align-right': titleAlign == 3}\">\n            <div class=\"title-block\">\n                <h3 class=\"mbr-section-title mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">KONTAKTA VASAKRONAN</h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><div>Fyll i formuläret så kontaktar vi dig så snart vi kan.</div></h4>\n            </div>\n        </div>\n        <div mbr-form class=\"form-block\" mbr-class=\"{'mbr-col-lg-3': contentWidth==1,\n                         'mbr-col-lg-6': contentWidth==2,\n                         'mbr-col-lg-8': contentWidth==3,\n                         'mbr-col-lg-10': contentWidth==4,\n                         'mbr-col-lg-12': contentWidth==5,\n                         'mbr-mr-auto':alignForm == 1,\n                         'mbr-m-auto':alignForm == 2,\n                         'mbr-ml-auto':alignForm == 3}\">\n            <form class=\"mbr-form mbr-jc-c mbr-flex mbr-m-auto mbr-column\" action=\"kundservice@vasakronan.se\" method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                <div class=\"mbr-overlay\" mbr-if=\"!transparentForm\"></div>\n                <div class=\"mbr-row\">\n                    <div submit-success class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                        <template data-form-alert type=\"amp-mustache\">Formuläret är skickat! Vi återkommer till dig inom kort.</template>\n                    </div>\n                    <div submit-error class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                        <template data-form-alert type=\"amp-mustache\">Formuläret är skickat! Vi återkommer till dig inom kort.</template>\n                    </div>\n                </div>\n                <div class=\"dragArea mbr-row\">\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][0][1]\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-user\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][0][0]\" value=\"First Name\">\n                        <input type=\"text\" name=\"form[data][0][1]\" data-form-field=\"Name\" placeholder=\"Namn*\" required mbr-theme-style=\"display-7\" class=\"field-input\">\n                    </div>\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][1][1]\" hidden=\"hidden\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-users\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Last Name\">\n                        <input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Last Name\" placeholder=\"Last Name\" required hidden=\"hidden\" mbr-theme-style=\"display-7\" class=\"field-input\">\n                    </div>\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][2][1]\" hidden=\"hidden\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-letter\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][2][0]\" value=\"E-mail\">\n                        <input type=\"email\" name=\"form[data][2][1]\" data-form-field=\"E-mail\" placeholder=\"E-postadress*\" required mbr-theme-style=\"display-7\" class=\"field-input\" hidden=\"hidden\">\n                    </div>\n                    <div class=\"mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][3][1]\">\n                        <span class=\"iconfont-wrapper\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"amp-iconfont mbri-mobile2\"></span>\n                        </span>\n                        <input type=\"hidden\" name=\"form[data][3][0]\" value=\"Phone\">\n                        <input type=\"tel\" name=\"form[data][3][1]\" placeholder=\"Telefon*\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" data-form-field=\"phone\" mbr-theme-style=\"display-7\" class=\"field-input\" value>\n                    </div>\n                    <div class=\"text-field mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][4][1]\" hidden=\"hidden\">\n                        <input type=\"hidden\" name=\"form[data][4][0]\" value=\"Message\">\n                        <textarea name=\"form[data][4][1]\" rows=\"2\" data-form-field=\"Message\" placeholder=\"Ev. meddelande\" mbr-theme-style=\"display-7\" class=\"field-input\" hidden=\"hidden\"></textarea>\n                    </div>\n                    <div class=\"mbr-section-btn align-right mbr-pt-3 mbr-col-md-12 mbr-col-sm-12 field\" data-toolbar=\"-mbrBtnMove, -mbrBtnAdd, -mbrLink\" mbr-buttons mbr-theme-style=\"display-4\"><a type=\"submit\" class=\"btn btn-md btn-form btn-danger\" data-app-placeholder=\"Type Text\">RING UPP MIG!</a></div>\n                </div>\n            </form>\n        </div>\n    </div>\n</section>",
+          "_anchor": "ampForm4-19",
+          "_isUserblock": true,
+          "_cid": "slSnjZUxS4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "text-align": "center",
+              "color": "#20202a"
+            }
+          },
+          "_name": "content2",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"02 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c' : alignContent == 2, 'mbr-jc-e' : alignContent == 3}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-bold mbr-pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">Rubrik (Title 3)</h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article>☑ Jag har läst och godkänner Vasakronans hantering av mina personuppgifter<br><a href=\"https://vasakronan.se/om-vasakronan/foretaget/gdpr/\" class=\"text-black\" target=\"_blank\">https://vasakronan.se/om-vasakronan/foretaget/gdpr/</a><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content2-1a",
+          "_isUserblock": true,
+          "_cid": "slSoeSdpWs",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".link-items": {
+              ".fLink": {
+                "width": "auto"
+              }
+            },
+            "& when (@typeBlock = '1')": {
+              ".mbr-row": {
+                "margin": "0"
+              }
+            },
+            "& when (@typeBlock = '2')": {
+              ".footer-container": {
+                "& when (@showCopyright) and (@showItems)": {
+                  "@media (min-width: 992px)": {
+                    "justify-content": "space-between"
+                  },
+                  "@media (max-width: 991px)": {
+                    "flex-direction": "column",
+                    "align-items": "center"
+                  }
+                }
+              },
+              ".mbr-row": {
+                "width": "auto",
+                "@media (max-width: 992px)": {
+                  "width": "100%"
+                }
+              },
+              ".copyright": {
+                "width": "auto"
+              }
+            },
+            ".mbr-text-al-c when (@showIcons), (@showText)": {
+              "text-align": "center"
+            },
+            "& when (@showIcons)": {
+              ".iconfont-wrapper": {
+                "width": "~\"@{iconsSize}rem\"",
+                "height": "~\"@{iconsSize}rem\"",
+                "display": "inline-flex",
+                "padding": "15px 20px",
+                "margin-right": "15px",
+                "justify-content": "center",
+                "align-items": "center",
+                "border-radius": "3px",
+                "cursor": "pointer",
+                "transition": "0.5s"
+              },
+              ".amp-iconfont": {
+                "font-size": "~\"@{iconsSize}rem\"",
+                "width": "~\"@{iconsSize}rem\"",
+                "color": "@primaryColor"
+              },
+              ".custom-bg-1:hover": {
+                "background-color": "@icon1Bg",
+                ".amp-iconfont": {
+                  "color": "contrast(@icon1Bg)"
+                }
+              },
+              ".custom-bg-2:hover when (@iconsAmount > 1)": {
+                "background-color": "@icon2Bg",
+                ".amp-iconfont": {
+                  "color": "contrast(@icon2Bg)"
+                }
+              },
+              ".custom-bg-3:hover when (@iconsAmount > 2)": {
+                "background-color": "@icon3Bg",
+                ".amp-iconfont": {
+                  "color": "contrast(@icon3Bg)"
+                }
+              },
+              ".custom-bg-4:hover when (@iconsAmount > 3)": {
+                "background-color": "@icon4Bg",
+                ".amp-iconfont": {
+                  "color": "contrast(@icon4Bg)"
+                }
+              },
+              ".custom-bg-5:hover when (@iconsAmount > 4)": {
+                "background-color": "@icon5Bg",
+                ".amp-iconfont": {
+                  "color": "contrast(@icon5Bg)"
+                }
+              },
+              ".custom-bg-6:hover when (@iconsAmount > 5)": {
+                "background-color": "@icon6Bg",
+                ".amp-iconfont": {
+                  "color": "contrast(@icon6Bg)"
+                }
+              }
+            }
+          },
+          "_name": "ampFooter5",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"ampFooter5\" group=\"Footers\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <select title=\"Block Type\" name=\"typeBlock\">\n        <option value=\"1\" selected>Type 1</option>\n        <option value=\"2\">Type 2</option>\n    </select>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" condition=\"typeBlock==2\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <!--  -->\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Items\" name=\"showItems\" checked>\n    <input type=\"range\" inline title=\"Items Count\" name=\"itemsCount\" min=\"1\" max=\"7\" step=\"1\" value=\"4\" condition=\"showItems\">\n    <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n    <input type=\"checkbox\" title=\"Copyright\" name=\"showCopyright\" checked>\n    <header>Icons</header>\n    <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n    <input type=\"range\" title=\"Icons Count\" name=\"iconsAmount\" min=\"1\" max=\"6\" value=\"4\" condition=\"showIcons\">\n    <input type=\"range\" title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"2.5\" step=\"0.1\" value=\"1.3\" condition=\"showIcons\">\n    <input type=\"color\" title=\"Icon 1 BG\" name=\"icon1Bg\" value=\"#55acee\" condition=\"showIcons\">\n    <input type=\"color\" title=\"Icon 2 BG\" name=\"icon2Bg\" value=\"#e4405f\" condition=\"showIcons &amp;&amp; iconsAmount > 1\">\n    <input type=\"color\" title=\"Icon 3 BG\" name=\"icon3Bg\" value=\"#cd201f\" condition=\"showIcons &amp;&amp; iconsAmount > 2\">\n    <input type=\"color\" title=\"Icon 4 BG\" name=\"icon4Bg\" value=\"#3b5999\" condition=\"showIcons &amp;&amp; iconsAmount > 3\">\n    <input type=\"color\" title=\"Icon 5 BG\" name=\"icon5Bg\" value=\"#25d366\" condition=\"showIcons &amp;&amp; iconsAmount > 4\">\n    <input type=\"color\" title=\"Icon 6 BG\" name=\"icon6Bg\" value=\"#212121\" condition=\"showIcons &amp;&amp; iconsAmount > 5\">\n    <!--  -->\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#eff2f2\" selected>\n    </fieldset>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"footer-container\" mbr-class=\"{'container': !fullWidth,\n                     'container-fluid': fullWidth,\n                     'mbr-jc-c': (!showCopyright || !showItems) && typeBlock==2,\n                     'mbr-flex': typeBlock==2,\n                     'mbr-row-reverse': reverseContent}\">\n        <div mbr-list mbr-list-grow=\"itemsCount\" class=\"mbr-row link-items mbr-jc-c mbr-fonts-style\" mbr-if=\"showItems\" mbr-theme-style=\"display-7\">\n            <p class=\"mbr-text fLink mbr-px-1 mbr-bold\" data-app-selector=\".fLink\"><a href=\"https://vasakronan.se/lediga-lokaler/\" class=\"text-black\">Lediga lokaler</a></p>\n            <p class=\"mbr-text fLink mbr-px-1 mbr-bold\" data-app-selector=\".fLink\"><a href=\"https://vasakronan.se/tjanster/\" class=\"text-black\">Tjänster</a></p>\n            <p class=\"mbr-text fLink mbr-px-1 mbr-bold\" data-app-selector=\".fLink\"><a href=\"https://vasakronan.se/om-vasakronan/\" class=\"text-black\">Om Vasakronan</a></p>\n            <p class=\"mbr-text fLink mbr-px-1 mbr-bold\" data-app-selector=\".fLink\"><a href=\"https://vasakronan.se/kundservice/\" class=\"text-black\">Kundservice</a></p>\n            \n        </div>\n        <div class=\"mbr-pt-3 mbr-pb-5 mbr-text-al-c\">\n            <p class=\"mbr-fonts-style mbr-pb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cumque.</p>\n            <div class=\"iconfont-wrapper custom-bg-1\" mbr-if=\"showIcons\">\n                <span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n            </div>\n            <div class=\"iconfont-wrapper custom-bg-2\" mbr-if=\"showIcons &amp;&amp; iconsAmount > 1\">\n                <span mbr-icon class=\"amp-iconfont animation-normal fa fa-instagram\"></span>\n            </div>\n            <div class=\"iconfont-wrapper custom-bg-3\" mbr-if=\"showIcons &amp;&amp; iconsAmount > 2\">\n                <span mbr-icon class=\"amp-iconfont animation-normal fa fa-youtube\"></span>\n            </div>\n            <div class=\"iconfont-wrapper custom-bg-4\" mbr-if=\"showIcons &amp;&amp; iconsAmount > 3\">\n                <span mbr-icon class=\"amp-iconfont animation-normal fa fa-facebook\"></span>\n            </div>\n            <div class=\"iconfont-wrapper custom-bg-5\" mbr-if=\"showIcons &amp;&amp; iconsAmount > 4\">\n                <span mbr-icon class=\"amp-iconfont animation-normal fa fa-whatsapp\"></span>\n            </div>\n            <div class=\"iconfont-wrapper custom-bg-6\" mbr-if=\"showIcons &amp;&amp; iconsAmount > 5\">\n                <span mbr-icon class=\"amp-iconfont animation-normal fa fa-spotify\"></span>\n            </div>\n        </div>\n        <div class=\"copyright mbr-px-2 mbr-flex mbr-jc-c\" mbr-if=\"showCopyright\">\n            <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-4\" data-app-selector=\".copyright .mbr-text\" data-app-placeholder=\"Type Text\">© Copyright Vasakronan AB – Ansvarig utgivare: Peter Östman<br><a href=\"https://vasakronan.se/cookies/\" class=\"text-black\">Information om cookies</a> · <a href=\"https://vasakronan.se/om-vasakronan/foretaget/gdpr/\" class=\"text-black\">Information om GDPR</a></p>\n        </div>\n    </div>\n</section>",
+          "_cid": "slO8z1GLks",
+          "_anchor": "ampFooter5-15",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
