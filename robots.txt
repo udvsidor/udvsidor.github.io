@@ -1,0 +1,4 @@
+# They wanted to index my pages but I said NO NO NO 
+User-agent: *
+Disallow: /
+
